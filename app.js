@@ -1,6 +1,13 @@
-const Jasper = require('./lib/jasperapi.js');
+const argv = require('yargs')
+  .usage('Usage: jasper-cli <command> [options]')
+  .describe('nocolor', 'Do not apply colors to output.')
+  .command('list', 'Display a column list of ICCIDs with details in plain text.')
+  .argv;
+
 const columnify = require('columnify');
-const colors = require('./lib/colors');
+const Colors = require('./lib/colors');
+const colors = new Colors(argv.nocolor);
+const Jasper = require('./lib/jasperapi.js');
 
 const { JASPER_USERNAME, JASPER_APIKEY, JASPER_HOSTNAME } = process.env;
 const jasper = new Jasper(JASPER_USERNAME, JASPER_APIKEY, JASPER_HOSTNAME);
@@ -83,4 +90,3 @@ if(!JASPER_USERNAME || !JASPER_APIKEY || !JASPER_HOSTNAME) {
   console.log(headerText + colors.constants.Reset);
   console.log(detailsText);  
 })()
-
