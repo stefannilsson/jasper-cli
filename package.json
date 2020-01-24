@@ -1,0 +1,20 @@
+{
+  "name": "jasper-cli",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "bin": "./app.js" ,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "columnify": "^1.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
