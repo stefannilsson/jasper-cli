@@ -1,9 +1,11 @@
 {
   "name": "jasper-cli",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.2.1",
+  "description": "Cisco Jasper command line tool",
   "main": "app.js",
-  "bin": "./bin/jasper-cli",
+  "bin": {
+    "jasper-cli": "./app.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

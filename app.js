@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const argv = require('yargs')
   .usage('Usage: jasper-cli <command> [options]')
   .scriptName('jasper-cli')
