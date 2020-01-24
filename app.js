@@ -17,7 +17,7 @@ const { JASPER_USERNAME, JASPER_APIKEY, JASPER_HOSTNAME } = process.env;
 const jasper = new Jasper(JASPER_USERNAME, JASPER_APIKEY, JASPER_HOSTNAME);
 
 if(!JASPER_USERNAME || !JASPER_APIKEY || !JASPER_HOSTNAME) {
-  console.log(colors.constants.FgRed + "Oops! One or more of the required environment variables {JASPER_USERNAME,JASPER_APIKEY,JASPER_HOSTNAME} missing.")
+  console.log(colors.constants.FgRed + "Oops! One or more of the required environment variables {JASPER_USERNAME,JASPER_APIKEY,JASPER_HOSTNAME} missing." + colors.constants.Reset);
   process.exit(-1);
 }
 
