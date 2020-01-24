@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "app.js",
-  "bin": "./app.js" ,
+  "bin": "./bin/jasper-cli",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "columnify": "^1.5.4"
+    "columnify": "^1.5.4",
+    "yargs": "^15.1.0"
   },
   "repository": {
     "type": "git",
