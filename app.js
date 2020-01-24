@@ -1,7 +1,10 @@
 const argv = require('yargs')
   .usage('Usage: jasper-cli <command> [options]')
+  .scriptName('jasper-cli')
   .describe('nocolor', 'Do not apply colors to output.')
+  .demandCommand(1)
   .command('list', 'Display a column list of ICCIDs with details in plain text.')
+  .recommendCommands(true)
   .argv;
 
 const columnify = require('columnify');
