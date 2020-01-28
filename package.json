@@ -1,6 +1,6 @@
 {
   "name": "jasper-cli",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Cisco Jasper command line tool",
   "main": "app.js",
   "bin": {
